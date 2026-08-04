@@ -1,10 +1,12 @@
 {
   "channel": "stable",
-  "releaseTag": "v0.5.0",
-  "appVersion": "0.5.0",
+  "releaseTag": "v0.5.1",
+  "appVersion": "0.5.1",
+  "publishedAt": "2026-08-04T22:01:06Z",
+  "releaseNotes": "Hotfix zapisu grafik w formularzach.\n\n### Poprawki\n\n- Zapis formularza z podmienioną grafiką nie otwiera już natywnego okna wyboru\n  pliku dla każdej grafiki; anulowanie takiego okna nie kasowało wcześniej\n  dodanego obrazka.\n\n### Techniczne\n\n- Wybrany plik jedzie do procesu głównego Electrona przez IPC jako bajty;\n  natywny picker został tylko jako fallback dla wywołania bez pliku.\n- `useStagedAssets.apply()` zachowuje zmianę, której zapis nic nie zapisał.",
   "downloadPageUrl": "https://loreplay.github.io/download/",
   "desktop": {
-    "windowsUrl": "https://github.com/LorePlay/download/releases/download/v0.5.0/LorePlay-Setup-0.5.0.exe",
-    "releasePageUrl": "https://github.com/LorePlay/download/releases/tag/v0.5.0"
+    "windowsUrl": "https://github.com/LorePlay/download/releases/download/v0.5.1/LorePlay-Setup-0.5.1.exe",
+    "releasePageUrl": "https://github.com/LorePlay/download/releases/tag/v0.5.1"
   }
 }
