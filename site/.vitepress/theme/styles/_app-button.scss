@@ -1,0 +1,117 @@
+// Styl przycisku pobierania — napisany od zera pod paletę LorePlay.
+// Kontur w kolorze akcentu; na hover wypełnienie wjeżdża od lewej (scaleX
+// z transform-origin: left), a treść — łącznie z ikoną — staje się biała.
+
+.app-button {
+  --button-height: 3.25rem;
+  --button-padding-inline: 1.5rem;
+  --button-icon-size: 1.25rem;
+  --button-accent: var(--color-accent);
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 12.5rem;
+  height: var(--button-height);
+  padding-inline: var(--button-padding-inline);
+  border: 2px solid var(--button-accent);
+  border-radius: var(--radius-s);
+  color: var(--button-accent);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  background: transparent;
+  overflow: hidden;
+  isolation: isolate;
+  cursor: pointer;
+  transition:
+    color var(--transition-base),
+    box-shadow var(--transition-base),
+    transform var(--transition-base);
+
+  &__fill {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    transform: scaleX(0);
+    transform-origin: left center;
+    background: var(--button-accent);
+    transition: transform 260ms cubic-bezier(0.22, 0.61, 0.36, 1);
+    pointer-events: none;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  &__icon {
+    display: inline-flex;
+    flex: 0 0 auto;
+    width: var(--button-icon-size);
+    height: var(--button-icon-size);
+    color: inherit;
+    transition: color var(--transition-base);
+
+    :deep(svg) {
+      width: 100%;
+      height: 100%;
+      fill: currentColor;
+    }
+  }
+
+  &__label {
+    white-space: nowrap;
+  }
+
+  &:not([aria-disabled='true']) {
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: #ffffff;
+        box-shadow: 0 0 1.5rem -0.25rem var(--button-accent);
+        transform: translateY(-2px);
+
+        .app-button__fill {
+          transform: scaleX(1);
+        }
+
+        .app-button__icon {
+          color: #ffffff;
+        }
+      }
+    }
+
+    &:focus-visible {
+      color: #ffffff;
+      outline: 2px solid #ffffff;
+      outline-offset: 3px;
+
+      .app-button__fill {
+        transform: scaleX(1);
+      }
+
+      .app-button__icon {
+        color: #ffffff;
+      }
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  }
+
+  &[aria-disabled='true'] {
+    border-color: var(--color-border-strong);
+    color: var(--color-text-muted);
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+  }
+}

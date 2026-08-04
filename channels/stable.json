@@ -1,0 +1,16 @@
+{
+  "channel": "stable",
+  "releaseTag": "v0.4.0",
+  "appVersion": "0.4.0",
+  "publishedAt": "2026-08-04T00:00:00Z",
+  "releaseNotes": "Wielopostaciowy czat z lokalnym modelem Bielik przez Ollamę.",
+  "downloadPageUrl": "https://loreplay.github.io/download/",
+  "desktop": {
+    "windowsUrl": "https://github.com/loreplay/download/releases/download/v0.4.0/LorePlay-Setup-0.4.0.exe",
+    "releasePageUrl": "https://github.com/loreplay/download/releases/tag/v0.4.0"
+  },
+  "android": {
+    "nativeBuild": 40,
+    "apkUrl": "https://github.com/loreplay/download/releases/download/v0.4.0/LorePlay-0.4.0.apk"
+  }
+}
