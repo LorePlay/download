@@ -1,12 +1,12 @@
 {
   "channel": "stable",
-  "releaseTag": "v0.6.0",
-  "appVersion": "0.6.0",
-  "publishedAt": "2026-08-06T05:53:50Z",
-  "releaseNotes": "Wydanie skupione na tym, jak aplikacja się obsługuje: interfejs przeszedł na\nkomponenty Quasara, a obok tego doszła warstwa pracy nad jakością odpowiedzi\nmałych modeli — umiejętności, budżet instrukcji i deterministyczne evale.\n\n### Nowości\n\n- Akcje wiadomości pod prawym przyciskiem: Fork, Ponów, Meta, Edytuj, Usuń.\n  Dwuklik otwiera edycję, a zaznaczenie tekstu podnosi menu z kopiowaniem —\n  „Kopiuj markdown\" bierze sam zaznaczony fragment razem z jego znacznikami.\n- Zakładki zapisane w adresie: „wstecz\" zamyka modal zamiast wychodzić z widoku.\n- Sesje: zmiana nazwy w miejscu, kosz odsłaniany kursorem, większe chipy.\n- Umiejętności seedowane do magazynu użytkownika, z polem `reminder`\n  wstrzykiwanym tuż przed generacją.\n- Postać: przełącznik prologu dla pierwszej wiadomości i pole `styleExample`\n  jako wzorzec formy wypowiedzi.\n- Ustawienia: parametr `min_p`, heurystyka budżetu instrukcji i pasek estymacji\n  skuteczności w panelu zapisu.\n- Modele: walidacja szablonu czatu po imporcie GGUF, awaryjna lista\n  rekomendowanych modeli, sortowanie i grupowanie w menu.\n- Evals: runner i deterministyczne checki na scenariuszach bazowych.\n\n### Zmiany\n\n- Kompaktowanie buduje osobny widok dla modelu zamiast nadpisywać historię,\n  a skompaktowane wiadomości zwijają się w interfejsie.\n- Stop sequences blokują pisanie za rozmówcę; regeneracja odpowiedzi zachowuje\n  format otwarcia poprzedniej wersji.\n- Pierwsza wiadomość nie da się ponowić — to własne powitanie postaci.\n- Okno kontekstu modelu jest sufitem, nie automatycznym ustawieniem.\n\n### Poprawki\n\n- Tytuł sesji generuje się po pierwszej odpowiedzi, nie przed nią.\n- Tag końca tury nie pokazuje się użytkownikowi.\n- Lista modeli pomija te, których i tak nie da się pobrać.\n- Podmieniona grafika nie ginie przy zapisie persony.\n\n### Techniczne\n\n- Koniec globalnych arkuszy stylów — style wróciły do komponentów.\n- Kontrolki formularzy, przyciski i ripple na komponentach Quasara\n  (`AppButton`, `AppIconButton`, `QSelect` z wyszukiwarką).\n- Jedno źródło prawdy dla wartości domyślnych konfiguracji i jeden model\n  formularza z przyciskiem zapisu.",
+  "releaseTag": "v0.6.1",
+  "appVersion": "0.6.1",
+  "publishedAt": "2026-08-06T06:38:43Z",
+  "releaseNotes": "Foldery w bibliotece odpowiadają przyciskowi wstecz.\n\n### Zmiany\n\n- Otwarty folder jest zapisany w adresie, więc wstecz — systemowy, kciuk myszy,\n  Alt+Left — wychodzi o poziom wyżej zamiast opuszczać bibliotekę, a\n  przeładowanie strony zostaje w tym samym folderze.\n- Domyślnym formatem wypowiedzi jest teraz postać-narrator.",
   "downloadPageUrl": "https://loreplay.github.io/download/",
   "desktop": {
-    "windowsUrl": "https://github.com/LorePlay/download/releases/download/v0.6.0/LorePlay-Setup-0.6.0.exe",
-    "releasePageUrl": "https://github.com/LorePlay/download/releases/tag/v0.6.0"
+    "windowsUrl": "https://github.com/LorePlay/download/releases/download/v0.6.1/LorePlay-Setup-0.6.1.exe",
+    "releasePageUrl": "https://github.com/LorePlay/download/releases/tag/v0.6.1"
   }
 }
