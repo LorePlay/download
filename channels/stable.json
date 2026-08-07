@@ -1,12 +1,12 @@
 {
   "channel": "stable",
-  "releaseTag": "v0.6.1",
-  "appVersion": "0.6.1",
-  "publishedAt": "2026-08-06T06:38:43Z",
-  "releaseNotes": "Foldery w bibliotece odpowiadają przyciskowi wstecz.\n\n### Zmiany\n\n- Otwarty folder jest zapisany w adresie, więc wstecz — systemowy, kciuk myszy,\n  Alt+Left — wychodzi o poziom wyżej zamiast opuszczać bibliotekę, a\n  przeładowanie strony zostaje w tym samym folderze.\n- Domyślnym formatem wypowiedzi jest teraz postać-narrator.",
+  "releaseTag": "v0.7.0",
+  "appVersion": "0.7.0",
+  "publishedAt": "2026-08-07T08:23:05Z",
+  "releaseNotes": "Sesja jest teraz samodzielnym bytem: to ona trzyma obsadę, świat, model i\nskille, a postać jest kartą, na którą wskazuje. Obok tego przebudowa\ninterfejsu — jeden komponent formularza dla paneli i modali oraz jedna miara\ndla wszystkich kontrolek.\n\n### Nowości\n\n- Encja Sesji: własna konfiguracja (postać, persona, świat, model, skille,\n  prolog) i bramka startu, która mówi, czego brakuje przed pierwszą turą.\n- Biblioteka sesji z folderami, wyszukiwaniem i przeciąganiem — jak biblioteki\n  postaci, person i światów.\n- Karta sesji pokazuje, czym sesja jest: obsada z twarzami, kafelek świata z\n  jego grafiką oraz liczniki wiadomości i wspomnień. Ikona w rogu oznacza\n  sesje otwarte na górnym pasku.\n- Światy: opis rzeczywistości trafia do promptu przed osobowością postaci, a\n  jedna grafika świata jest jednocześnie tłem czatu.\n- Wspomnienia postaci z osobną zakładką, dodawaniem w modalu i dopasowaniem\n  przez embeddingi, gdy w sesji wybrano model embeddingowy.\n- Grupy formularza zwijają się i rozwijają płynnie, a ich nagłówek jest w\n  całości klikalny.\n\n### Zmiany\n\n- Prolog przeniesiony z postaci na sesję, razem z wyborem, czyimi ustami jest\n  wypowiadany.\n- Kliknięcie postaci w bibliotece otwiera jej ustawienia; nową sesję zaczyna\n  się z menu karty.\n- Panele boczne, modale i strona ustawień mają jeden układ formularza:\n  przewijana treść, akcje przyklejone pod nią, wcięcia należące do grup.\n- Pola, selecty, przełącznik segmentowy i edytor Lava mają jedną wysokość\n  (50 px) i jeden rozmiar tekstu (14 px) — ten sam, co przyciski.\n- Rozwijane listy selectów mają rytm i podświetlenie menu spod przycisków.\n- Panel modeli: statystyki przewijają się razem z formularzem strojenia, a\n  ustawianie modelu domyślnego zniknęło z listy zainstalowanych (zostaje w\n  Ustawieniach → Model).\n\n### Poprawki\n\n- Polskie znaki nie wypadają już z kroju: dołączony Roboto zawiera podzbiór\n  latin-ext, więc „ą\", „ć\", „ę\", „ł\" i „ń\" nie są dobierane z fontu\n  systemowego w środku wyrazu.\n- Karty sesji na górnym pasku nie kurczą się przy powiększeniu interfejsu —\n  ich metryki skalują się razem z paskiem zamiast mieszać stałe piksele.\n- Wyrównanie tekstu w selectach i wysokość pozycji w listach wyboru.",
   "downloadPageUrl": "https://loreplay.github.io/download/",
   "desktop": {
-    "windowsUrl": "https://github.com/LorePlay/download/releases/download/v0.6.1/LorePlay-Setup-0.6.1.exe",
-    "releasePageUrl": "https://github.com/LorePlay/download/releases/tag/v0.6.1"
+    "windowsUrl": "https://github.com/LorePlay/download/releases/download/v0.7.0/LorePlay-Setup-0.7.0.exe",
+    "releasePageUrl": "https://github.com/LorePlay/download/releases/tag/v0.7.0"
   }
 }
